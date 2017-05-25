@@ -1,0 +1,151 @@
+.top-bar{
+  background: linear-gradient(darkgray, black);
+  height: 6.5em;
+  filter: blur(0.5px);
+  color:white;
+  border: 0px;
+  margin-left: -1px;
+  margin-right: -1px;
+}
+
+#titleText{
+  margin-left: 10%;
+  padding-top:  1em;
+}
+
+.linkRow{
+  text-align:center;
+}
+
+#nav-links{
+  text-align: center;
+  margin-top: -1.5em;
+}
+#nav-links ul{
+  list-style-type: none;
+}
+#nav-links ul li{
+  display: inline;
+  margin-right:5em;
+}
+#nav-links ul li button{
+  border: none;
+  background-color: transparent;
+  color:white;
+}
+#nav-links ul li button:hover{
+  color: grey;
+  cursor: pointer;
+}
+#nav-links ul li button:focus{
+  outline:0;
+}
+
+.personal-links{
+  text-align:right; 
+  margin-right: 3em;
+  margin-top: -6.5em;
+}
+.personal-links ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.personal-links ul li{
+  display: inline;
+}
+.personal-links ul li img{
+  width: 25px;
+  height: 25px;
+}
+
+.landing-img{
+    overflow: hidden;
+    text-align: center;
+    margin-top: -1px;
+}
+.landing-img img{
+  width: 150%;
+  filter: blur(5px);
+  margin-left: -5em;
+  margin-top: -1em;
+  z-index: 0;
+}
+
+.projects{
+  text-align: center;
+  background: linear-gradient(white, lightgray);
+  height: 800px;
+}
+
+#projectsTitle{
+  background-color: black;
+  color: white;
+  height: 50px;
+}
+
+#projects-list{
+
+}
+#projects-list ul{
+  text-align: center;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#projects-list ul li{
+  float:left;
+  display: table-cell;
+  text-align: center;
+  width: 33.3333333333333%;
+}
+#projects-list ul li button{
+  width: 100%;
+  cursor: pointer;
+}
+#projects-list ul li button:hover{
+  background-color: silver;
+  border: none;
+}
+
+#project-display {
+  display: inline;
+  width: 50%;
+  margin: 0 auto;
+}
+#project-display img{
+  max-height: 500px;
+  margin-left: 0;
+  padding: 0;
+  max-width: 700px;
+  border: solid 1px;
+}
+#project-display button{
+  height:350px;
+  width: 40px;
+}
+#previous-image{
+  position: relative;
+  top: 0px;
+  left: -10%;
+  cursor: pointer;
+}
+#next-image{
+  position: relative;
+  top: 0px;
+  right: -10%;
+  cursor: pointer;
+}
+
+#image-description{
+  text-align: center;
+}
+#description-text{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#contactLink{
+
+}
