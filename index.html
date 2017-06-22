@@ -1,75 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>roryeagan.com</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
-  <div class="top-bar">
-    <h1 id="titleText" class="text-center">Rory Eagan</h1>
-    <div id="nav-links">
-      <ul>
-        <li>
-          <a href="#aboutLink"><button>About</button></a>
-        </li>
-        <li>
-          <button onclick="scrollToY(675, 400, 'easeInOutQuint')">Projects</button>
-        </li>
-        <li>
-          <button>Contact</button>
-        </li>
-      </ul>
+    <div class="section" id="landing">
+        <button>About</button>
+        <button>Project</button>
+        <button>Contact</button>
     </div>
-    <div class="personal-links">
-      <ul id="link-icons">
-        <li>
-          <a href="https://github.com/eaganro"><img src="http://www.freeiconspng.com/uploads/github-logo-icon-30.png"></a>
-        </li>
-        <li>
-            <a href="mailto:rory.eagan@gmail.com"><img src="https://img.clipartfest.com/d17e0a9caffeece99857f42fd2f0652a_email-twitter-white-email-clipart-transparent-background_2400-2400.png"></a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/in/rory-eagan-1a9757141/"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-512.png"></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div id="aboutLink" class="landing-img">
-    <img src="http://www.diserio.com/nycskyline.jpg">
-  </div>
-  <div id="projectLink" class="projects">
-    <div id="projectsTitle">
-      <h1>Some Of My Recent Projects</h1>
-    </div>
-    <div id="projects-list">
-      <ul>
-        <li>
-          <button num=0 onclick="setProject(this);">ISIS Map<br><img style="height:150px" src="ProjectImages/0/0.png"></button>
-        </li>
-        <li>
-          <button num=1 onclick="setProject(this);">Press IT<br><img style="height:150px" src="ProjectImages/1/0.png"></button>
-        </li>
-        <li>
-          <button num=2 onclick="setProject(this);">Class Scheduler<br><img style="height:150px" src="ProjectImages/2/0.png"></button>
-        </li>
-      </ul>
-    </div>
-    <div id="project-display">
-      <button id="previous-image"><</button>
-      <img id="current-image" src="ProjectImages/0/0.png">
-      <button id="next-image">></button>
-    </div>
-    <div id="image-description">
-      <span id="imageNumber"></span>
-      <p id="description-text"></p>
-    </div>
-  </div>
-  <div id="contactLink">
+    <div class="section" id="about">
+        <div id="techSec">
+            <h3 id="techHead">Technologies I Use</h3>
+            <div id="techs">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png">
+                <img src="http://www.archimag.com/sites/archimag.com/files/styles/article/public/CSS3_logo.png?itok=gcdJv7dH">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Javascript-shield.png">
+                <img src="https://code-maven.com/img/node.png">
+                <img src="http://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png">
+                <img src="http://www.archimag.com/sites/archimag.com/files/styles/article/public/CSS3_logo.png?itok=gcdJv7dH">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Javascript-shield.png">
+                <img src="">
+            </div>
+        </div>
 
-  </div>
-  <script type="text/javascript" src="index.js"></script>
+        <div>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+    </div>
+
+    <div class="section" id="projects">
+        
+    </div>
+
 </body>
+
 </html>

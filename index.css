@@ -1,151 +1,88 @@
-.top-bar{
-  background: linear-gradient(darkgray, black);
-  height: 6.5em;
-  filter: blur(0.5px);
-  color:white;
-  border: 0px;
-  margin-left: -1px;
-  margin-right: -1px;
-}
-
-#titleText{
-  margin-left: 10%;
-  padding-top:  1em;
-}
-
-.linkRow{
-  text-align:center;
-}
-
-#nav-links{
-  text-align: center;
-  margin-top: -1.5em;
-}
-#nav-links ul{
-  list-style-type: none;
-}
-#nav-links ul li{
-  display: inline;
-  margin-right:5em;
-}
-#nav-links ul li button{
-  border: none;
-  background-color: transparent;
-  color:white;
-}
-#nav-links ul li button:hover{
-  color: grey;
-  cursor: pointer;
-}
-#nav-links ul li button:focus{
-  outline:0;
-}
-
-.personal-links{
-  text-align:right; 
-  margin-right: 3em;
-  margin-top: -6.5em;
-}
-.personal-links ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.personal-links ul li{
-  display: inline;
-}
-.personal-links ul li img{
-  width: 25px;
-  height: 25px;
-}
-
-.landing-img{
-    overflow: hidden;
-    text-align: center;
-    margin-top: -1px;
-}
-.landing-img img{
-  width: 150%;
-  filter: blur(5px);
-  margin-left: -5em;
-  margin-top: -1em;
-  z-index: 0;
-}
-
-.projects{
-  text-align: center;
-  background: linear-gradient(white, lightgray);
-  height: 800px;
-}
-
-#projectsTitle{
-  background-color: black;
-  color: white;
-  height: 50px;
-}
-
-#projects-list{
-
-}
-#projects-list ul{
-  text-align: center;
-  list-style-type: none;
+body {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  margin: 0;
-  padding: 0;
-}
-#projects-list ul li{
-  float:left;
-  display: table-cell;
-  text-align: center;
-  width: 33.3333333333333%;
-}
-#projects-list ul li button{
-  width: 100%;
-  cursor: pointer;
-}
-#projects-list ul li button:hover{
-  background-color: silver;
-  border: none;
-}
-
-#project-display {
-  display: inline;
-  width: 50%;
   margin: 0 auto;
-}
-#project-display img{
-  max-height: 500px;
-  margin-left: 0;
-  padding: 0;
-  max-width: 700px;
-  border: solid 1px;
-}
-#project-display button{
-  height:350px;
-  width: 40px;
-}
-#previous-image{
+  align-items: center; }
+
+.section {
+  flex: 1;
+  background: red;
+  border: 1px solid black;
+  width: 90%;
+  height: 100vh; }
+
+.section:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.section:first-child button {
+  margin: 25% 5%;
+  border: 0;
+  box-sizing: border-box;
+  width: 10%;
+  height: 50px;
+  background: none;
+  color: white;
+  font-size: 100%;
+  font-weight: 800;
   position: relative;
-  top: 0px;
-  left: -10%;
-  cursor: pointer;
-}
-#next-image{
-  position: relative;
-  top: 0px;
-  right: -10%;
-  cursor: pointer;
-}
+  vertical-align: middle;
+  transition: color .5s; }
+  .section:first-child button::before, .section:first-child button::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  .section:first-child button:focus {
+    outline: none; }
+  .section:first-child button::before, .section:first-child button::after {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0; }
+  .section:first-child button::before {
+    top: 0;
+    left: 0; }
+  .section:first-child button::after {
+    bottom: 0;
+    right: 0; }
+  .section:first-child button:hover {
+    color: #60daaa; }
+  .section:first-child button:hover::before, .section:first-child button:hover::after {
+    width: 100%;
+    height: 100%; }
+  .section:first-child button:hover::before {
+    border-top-color: #60daaa;
+    border-right-color: #60daaa;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
+  .section:first-child button:hover::after {
+    border-bottom-color: #60daaa;
+    border-left-color: #60daaa;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
 
-#image-description{
-  text-align: center;
-}
-#description-text{
-  margin-left: 20%;
-  margin-right: 20%;
-}
+.section:nth-child(2) {
+  display: flex; }
+  .section:nth-child(2) div {
+    flex: 1; }
+  .section:nth-child(2) #techSec #techHead {
+    position: absolute;
+    left: 10vw; }
+  .section:nth-child(2) #techSec #techs {
+    width: 90%;
+    position: relative;
+    top: 100px;
+    left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; }
+    .section:nth-child(2) #techSec #techs img {
+      flex: 1;
+      max-width: 10vw;
+      height: auto;
+      margin-right: 10%;
+      margin-bottom: 5vw;
+      max-height: 10vw; }
 
-#contactLink{
-
-}
+/*# sourceMappingURL=index.css.map */
